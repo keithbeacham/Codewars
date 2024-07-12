@@ -10,10 +10,11 @@ function domainName(url) {
   //   }
   //   let domain = url.slice(hostIndex).split(".");
   //   return domain[0] === "www" ? domain[1] : domain[0];
-  url = url.replace("https://", "");
-  url = url.replace("http://", "");
-  url = url.replace("www.", "");
-  return url.split(".")[0];
+  return url
+    .replace("https://", "")
+    .replace("http://", "")
+    .replace("www.", "")
+    .split(".")[0];
 }
 
 module.exports = domainName;
