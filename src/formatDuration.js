@@ -4,7 +4,7 @@ function formatDuration(seconds) {
   const numYears = Math.floor(seconds / 31536000);
   if (numYears) {
     seconds -= numYears * 31536000;
-    output = numYears > 1 ? `, ${numYears} years` : `, ${numYears} year`;
+    output = numYears > 1 ? `, ${numYears} years` : `, 1 year`;
   }
   const numDays = Math.floor(seconds / 86400);
   if (numDays) {
